@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FoxTradeApp">
+    <meta name="keywords" content="FoxTradeApp">
+
+    <meta name="theme-color" content="#E9E8F0">
+    <!-- preload assets -->
+    <link rel="preload" href="fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/montserrat-v14-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/lato-v16-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/css/style.css" as="style">
+    <link rel="preload" href="assets/js/vendors/uikit.min.js" as="script">
+    <link rel="preload" href="assets/js/utilities.min.js" as="script">
+    <link rel="preload" href="assets/js/config-theme.js" as="script">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- uikit -->
+    <script src="assets/js/vendors/uikit.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="https://www.indonez.com/html-demo/profit/img/favicon.ico" type="image/x-icon">
+    <!-- touch icon -->
+    <link rel="apple-touch-icon-precomposed" href="https://www.indonez.com/html-demo/profit/img/apple-touch-icon.png">
+    <title>Homepage </title>
+  
+</head>
+
+<body>
+    <!-- page loader begin -->
+    <div class="page-loader">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <!-- page loader end -->
+    <!-- header begin -->
+    <header>
+      
+        <div class="uk-section uk-padding-remove-vertical">
+            <nav class="uk-navbar-container" data-uk-sticky="show-on-up: true; animation: uk-animation-slide-top;" ">
+                <div class="uk-container" data-uk-navbar>
+                    <div class="uk-navbar-left uk-width-expand uk-flex uk-flex-between"     >
+                     <a class="uk-navbar-item uk-logo" href="/">
+        <img class="custom-header-logo" src="logo.png" alt="logo" data-uk-img>
+    </a>
+    
+    <style>
+    .custom-header-logo {
+        width: 300px !important; /* Adjust the width as needed */
+        height: auto !important; /* Maintains the aspect ratio */
+    }
+    </style>
+    
+                        </a>
+                        <ul class="uk-navbar-nav uk-visible@m">
+                            <li><a href="/">Home</a>
+                                
+                            </li>
+                            <li><a href="markets">Markets</a>
+                            </li>
+                            <li><a href="#">Company<span data-uk-navbar-parent-icon></span></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li><a href="about">About</a></li>
+                                        <li><a href="contact">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                       
+                           
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-right uk-width-auto">
+                        <div class="uk-navbar-item uk-visible@m in-optional-nav">
+                            <div>
+                                <a href="/login" class="uk-button uk-button-link">Login</a>
+                                <a href="/register" class="uk-button uk-button-link">Sign up</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- header end -->
+    <main>
+    <!-- slideshow content begin -->
+    <div class="uk-section uk-padding-remove-vertical">
+        <div class="in-slideshow uk-visible-toggle" data-uk-slideshow>
+            <ul class="uk-slideshow-items uk-light">
+                <li>
+                    <div class="uk-position-cover">
+                        <div class="video-container">
+                            <video src="main.mp4" class="uk-cover" width="100%" height="100%" autoplay muted loop playsinline></video>
+                            <style>
+                                .container {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+
+                                }
+                                .heading {
+                                    flex: 1;
+                                    margin-left: 5rem;
+                                    margin-right: 5rem;
+
+                                    text-align: center;
+                                }
+/* media query */
+                                @media (max-width: 768px) {
+            .overlay h1 strong {
+                font-size: 2rem;
+            }
+
+            .heading strong {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 680px) {
+            .overlay h1 strong {
+                font-size: 1.5rem;
+            }
+
+            .heading {
+                flex: 1 1 100%;
+            }
+            .container {
+                position: relative;
+            }
+            #firsth1{
+                position: absolute;
+        left: 17rem;
+        top: -12rem;
+            }
+            .heading #spread1{
+                position: absolute;
+                left: 13rem;
+    top: -3rem;
+  line-height: 1.2;
+            }
+            .heading #leverage1{
+                position: absolute;
+                left: 11.3rem;
+    top: 4rem;
+    line-height: 1.2;
+            }
+            .heading #live{
+                position: absolute;
+                left: 30rem;
+    top: -3rem;
+    line-height: 1.2;
+            }
+            .heading #zero{
+                position: absolute;
+                left: 29rem;
+    top: 4rem;
+    line-height: 1.2;
+            }
+            .heading #last{
+                position: absolute;
+                top: 10rem;
+    line-height: 1.2;
+    left: 21rem;
+  
+            }
+            /* .spread {
+                font-size: 2rem;
+                position: absolute;
+    left: 22rem;
+    top: 11rem;
+
+            } */
+        }
+
+                            </style>
+                            <div class="shadow-overlay"></div>
+                            <div class="overlay">
+                                <div id="firsth1">
+                                    <h1 style="font-size:2rem"><strong>Start Trading With <br> No Minimum Deposit</strong></h1>
+                                <br>
+                                <h1><a href="/register">Get Started</a></h1>
+                                </div>
+                                <div class="container">
+                                    <div class="heading">
+                                        <p id="spread1"> <strong style="font-size:2.3rem" class="spread" >0.0</strong> <br>
+                                           <span  style="font-size:0.9rem !important; letter-spacing: 2px; font-weight: 900;"> SPREADS FROM</span>
+                                        </p>
+                                    </div>
+                                    <div class="heading">
+                                        <p id="live"> <strong style="font-size:2.3rem">24/</strong><strong style="font-size:2.3rem" class="counter" data-target="7">24/7</strong>  <br>
+                                            <span  style="font-size:0.9rem; letter-spacing: 2px; font-weight: 900;"> Live Support</span>
+                                         </p>
+                                            
+                                    </div>
+                              
+                                    <div class="heading">
+                                        <p id="leverage1"> <span><strong class="counter" data-target="26000" style="font-size:2.3rem">26000</strong><strong style="font-size:3rem">+</strong></span>  <br>
+                                            <span  style="font-size:0.9rem; letter-spacing: 2px; font-weight: 900;"> TRADABLE INSTRUMENTS</span>
+                                         </p>
+                                       
+                                    </div>
+                                    <div class="heading" >
+                                        <p id="zero"> <strong style="font-size:2.3rem">$0</strong> <br>
+                                            <span  style="font-size:0.9rem; letter-spacing: 2px; font-weight: 900;"> MINIMUM DEPOSIT</span>
+                                         </p>
+                                        
+                                    </div>
+
+
+                                      <div class="heading">
+                                        <p id="last"> <span><strong style="font-size:2.3rem">1:</strong><strong class="counter" data-target="500" style="font-size:2.3rem">500</strong></span>  <br>
+                                            <span  style="font-size:0.9rem; letter-spacing: 2px; font-weight: 900;"> LEVERAGE UP TO</span>
+                                         </p>
+                                       
+                                    </div>
+                                    <script>
+                                        // script.js
+/* script.js */
+document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.counter');
+  counters.forEach(counter => {
+    counter.innerText = '0';
+    const updateCounter = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+      const increment = target / 300; // Adjust the speed by changing the divisor
+
+      if (current < target) {
+        counter.innerText = `${Math.ceil(current + increment)}`;
+        setTimeout(updateCounter, 10); // Adjust the speed by changing the timeout value
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCounter();
+  });
+});
+
+
+                                    </script>
+                                </div>
+                                <br>
+                               
+                            </div>
+                        
+                        </div>
+                        
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <style>
+    .uk-section.uk-padding-remove-vertical {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
+    .in-slideshow .uk-slideshow-items {
+        height: 100vh; /* Ensure the slideshow takes full viewport height */
+    }
+    
+    .uk-position-cover {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .video-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    
+    .uk-cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensures the video covers the container */
+    }
+    
+    .shadow-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        z-index: 1; /* Places the overlay above the video */
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: center;
+        z-index: 2; /* Ensures the text is above the overlay */
+    }
+    
+    h1 {
+        margin: 0;
+        font-size: 2em; /* Adjust as necessary */
+    }
+    </style>
+    <!-- slideshow content end -->
+    <!-- section content begin -->
+    <div class="uk-section uk-section-muted in-padding-large-vertical@s in-profit-1">
+        <div class="uk-container">
+            <div class="uk-grid-divider" data-uk-grid>
+                <div class="uk-width-expand@m in-margin-top-20@s">
+                    <h2>Why FoxTradeApp is a trusted FX broker</h2>
+                    <p>As a distinguished trader, you demand excellence, and we deliver with a comprehensive suite of tools and services meticulously crafted to elevate your trading experience. Our platform provides access to a vast array of currency pairs, ensuring diversified opportunities aligned with your investment objectives.
+                <div class="uk-width-2-3@m">
+                    <div class="uk-child-width-1-2@s uk-child-width-1-2@m" data-uk-grid>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="uk-margin-right">
+                                <img src="assets/imgassets/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-icon-1.svg" alt="profit-icon" width="72" height="72" data-uk-img>
+                            </div>
+                            <div>
+                                <p class="uk-text-bold uk-margin-remove">Wide Range of Trading Instruments</p>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="uk-margin-right">
+                                <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-icon-2.svg" alt="profit-icon" width="72" height="72" data-uk-img>
+                            </div>
+                            <div>
+                                <p class="uk-text-bold uk-margin-remove">Unparalleled Trading Conditions</p>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="uk-margin-right">
+                                <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-icon-3.svg" alt="profit-icon" width="72" height="72" data-uk-img>
+                            </div>
+                            <div>
+                                <p class="uk-text-bold uk-margin-remove">Globally Licensed & Regulated</p>
+                            </div>
+                        </div>
+                        <div class="uk-flex uk-flex-middle">
+                            <div class="uk-margin-right">
+                                <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-icon-4.svg" alt="profit-icon" width="72" height="72" data-uk-img>
+                            </div>
+                            <div>
+                                <p class="uk-text-bold uk-margin-remove">Committed to Forex Education</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section content end -->
+    <!-- section content begin -->
+    <div class="uk-section uk-padding-large in-padding-large-vertical@s uk-background-contain in-profit-2" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-decor-3.svg" data-uk-img>
+        <div class="uk-container">
+            <div class="uk-grid uk-flex uk-flex-center">
+                <div class="uk-width-1-2@m uk-text-center">
+                    <h2>Experience more than Trading.</h2>
+                    <p class="uk-text-lead">With cutting-edge technology and lightning-fast execution, you can seize fleeting market opportunities with confidence and agility. Stay ahead of the curve with our in-depth market analysis, curated by seasoned experts, and gain valuable insights to inform your trading decisions. Join our esteemed community of traders who demand nothing short of excellence, and embark on a journey towards unparalleled success in the dynamic world of Forex trading.</p>
+                    <i class="fas fa-chevron-down uk-text-primary"></i>
+                </div>
+                <div class="uk-width-5-6@m">
+                    <div class="uk-child-width-1-2@s uk-child-width-1-2@m uk-margin-medium-top" data-uk-grid>
+                        <div>
+                            <div class="in-pricing-1">
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img class="uk-width-1-1 uk-align-center" src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-content-1.jpg" width="460" height="368" alt="sample-image" data-uk-img>
+                                      <span></span>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <div class="in-heading-extra in-card-decor-1">
+                                            <h2 class="uk-margin-remove-bottom">Economic</h2>
+                                            <p class="uk-text-lead">Analysis</p>
+                                        </div>
+                                        <p class="uk-margin-small-top">Stay ahead of the markets with world-leading market analysis through daily webinars by industry experts.</p>
+                                        <div class="uk-margin-medium-top">
+                                            <a class="uk-button uk-button-link uk-text-uppercase uk-text-small" href="#">Read analysis<i class="fas fa-caret-square-right uk-margin-small-left"></i></a>
+                                            <span class="uk-label uk-border-pill uk-align-right">Weekly Update</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="in-pricing-1">
+                                <div class="uk-card uk-card-default uk-box-shadow-medium">
+                                    <div class="uk-card-media-top">
+                                        <img class="uk-width-1-1 uk-align-center" src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-content-2.jpg" width="460" height="368" alt="sample-image" data-uk-img>
+                                      <span></span>
+                                    </div>
+                                    <div class="uk-card-body">
+                                        <div class="in-heading-extra in-card-decor-2">
+                                            <h2 class="uk-margin-remove-bottom">Technical</h2>
+                                            <p class="uk-text-lead">Analysis</p>
+                                        </div>
+                                        <p class="uk-margin-small-top">Access the financial markets with an account catered to your needs and benefit from good conditions.</p>
+                                        <div class="uk-margin-medium-top">
+                                            <a class="uk-button uk-button-link uk-text-uppercase uk-text-small" href="#">Read analysis<i class="fas fa-caret-square-right uk-margin-small-left"></i></a>
+                                            <span class="uk-label uk-border-pill uk-align-right">Daily Update</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <div class="uk-card uk-card-default uk-card-body in-profit-appcard">
+                                <div class="uk-child-width-1-2@m" data-uk-grid>
+                                    <div>
+                                        <div class="uk-flex" data-uk-margin>
+                                            <a href="#" class="uk-button in-button-app uk-margin-small-right">
+                                                <i class="fab fa-google-play fa-2x"></i>
+                                                <span class="wrapper">Download from<br><span>Play Store</span></span>
+                                            </a>
+                                            <a href="#" class="uk-button in-button-app">
+                                                <i class="fab fa-apple fa-2x"></i>
+                                                <span class="wrapper">Download from<br><span>App Store</span></span>
+                                            </a>
+                                        </div>
+                                        <hr>
+                                        <p>Trade on <span class="uk-text-bold uk-text-primary">world class platform</span> without a doubt.</p>
+                                    </div>
+                                    <div class="uk-visible@m">
+                                        <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-mockup-1.png" width="450" height="203" alt="profit-mockup" data-uk-img>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-width-1-1">
+                            <div class="uk-grid uk-grid-divider uk-grid-match in-profit-tradestatus" data-uk-grid>
+                                <div class="uk-width-1-1 uk-width-auto@m">
+                                    <div class="uk-flex uk-flex-left uk-flex-center@m">
+                                        <div class="uk-grid uk-grid-small uk-flex-middle">
+                                            <div class="uk-width-auto">
+                                                <div class="in-icon-wrap circle primary-color">
+                                                    <i class="fas fa-chart-line fa-2x"></i>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <h1 class="uk-margin-remove-bottom">324,978,126</h1>
+                                                <p class="uk-text-uppercase uk-text-primary uk-text-small uk-margin-remove-top">Trades Opened at Profit</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uk-width-1-1 uk-width-expand@m uk-flex-middle">
+                                    <p class="uk-text-lead">Trade & Invest in Stocks, Currencies, Indices, and Commodities (CFDs).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section content end -->
+    <!-- section content begin -->
+    <div class="uk-section uk-section-secondary uk-padding-large uk-background-contain uk-background-bottom-center in-padding-large-vertical@s in-profit-3" data-src="https://www.indonez.com/html-demo/profit/img/in-section-profit-3.png" data-uk-img>
+        <div class="uk-container uk-margin-small-bottom">
+            <div class="uk-grid-large" data-uk-grid>
+                <div class="uk-width-1-2@m">
+                    <h2>We are committed to meeting your CFD and FX trading needs</h2>
+                    <p class="uk-text-lead">Excepteur occaeca cupidata non proident fugiat nulla pariatur quasi architecto beatae, sunt in culpa quila officia deserunt mollit anim id est aute laborum.</p>
+                </div>
+                <div class="uk-width-1-1">
+                    <div class="uk-child-width-1-2@s uk-child-width-1-4@m uk-margin-small-top" data-uk-grid>
+                        <div>
+                            <h1 class="uk-heading-bullet">
+                                <span class="count" data-counter-end="250">0</span>M+
+                            </h1>
+                            <p>Lorem ipsum dolor sit odin amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div>
+                            <h1 class="uk-heading-bullet">
+                                <span class="count" data-counter-end="90">0</span>%
+                            </h1>
+                            <p>Lorem ipsum dolor sit odin amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div>
+                            <h1 class="uk-heading-bullet">
+                                <span class="count" data-counter-end="131">0</span>M+
+                            </h1>
+                            <p>Lorem ipsum dolor sit odin amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div>
+                            <h1 class="uk-heading-bullet">
+                                <span class="count" data-counter-end="35">0</span>M+
+                            </h1>
+                            <p>Lorem ipsum dolor sit odin amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section content end -->
+    <!-- section content begin -->
+    <div class="uk-section uk-padding-remove-bottom in-offset-bottom-40 in-profit-4">
+        <div class="uk-container uk-margin-top">
+            <div class="uk-grid uk-flex uk-flex-center" data-uk-grid>
+                <div class="uk-width-5-6@m">
+                    <div class="uk-grid uk-flex-middle" data-uk-grid>
+                        <div class="uk-width-expand@m">
+                            <h2>Connect to global capital markets</h2>
+                        </div>
+                        <div class="uk-width-3-5@m">
+                            <p class="uk-text-lead">Access 40,000+ trading instruments and professional asset management on award-winning platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-1">
+                    <div class="uk-child-width-1-2@s uk-child-width-1-5@m in-profit-stockprice" data-uk-grid>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-border-pill">
+                                <span class="uk-float-left">
+                                    <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-ticker-1.svg" alt="profit-ticker" width="77" height="20" data-uk-img>
+                                </span>
+                                <span class="uk-float-right down">
+                                    <i class="fas fa-arrow-down"></i>1,526.05
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-border-pill">
+                                <span class="uk-float-left">
+                                    <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-ticker-2.svg" alt="profit-ticker" width="77" height="20" data-uk-img>
+                                </span>
+                                <span class="uk-float-right down">
+                                    <i class="fas fa-arrow-down"></i>205.37
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-border-pill">
+                                <span class="uk-float-left">
+                                    <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-ticker-3.svg" alt="profit-ticker" width="77" height="20" data-uk-img>
+                                </span>
+                                <span class="uk-float-right down">
+                                    <i class="fas fa-arrow-down"></i>267.97
+                                </span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-border-pill">
+                                <span class="uk-float-left">
+                                    <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-ticker-4.svg" alt="profit-ticker" width="77" height="20" data-uk-img>
+                                </span>
+                                <span class="uk-float-right up">
+                                    <i class="fas fa-arrow-up"></i>59,230
+                                </span>
+                            </div>
+                        </div>
+                        <div class="uk-visible@m">
+                            <div class="uk-card uk-card-body uk-card-small uk-card-default uk-border-pill">
+                                <span class="uk-float-left">
+                                    <img src="https://www.indonez.com/html-demo/profit/img/in-lazy.svg" data-src="https://www.indonez.com/html-demo/profit/img/in-profit-ticker-5.svg" alt="profit-ticker" width="77" height="20" data-uk-img>
+                                </span>
+                                <span class="uk-float-right up">
+                                    <i class="fas fa-arrow-up"></i>78.98
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-5-6@m uk-margin-medium-bottom">
+                    <div class="uk-grid-large uk-flex-middle" data-uk-grid>
+                        <div class="uk-width-auto@m">
+                            <h4 class="uk-margin-remove-bottom uk-text-primary">Ready to trade?</h4>
+                            <p class="uk-margin-remove-top">Get started with your trading account today.</p>
+                        </div>
+                        <div class="uk-width-expand@m">
+                            <form class="uk-grid-small" data-uk-grid>
+                                <div class="uk-width-1-1 uk-width-expand@m">
+                                    <input class="uk-input uk-border-rounded" type="text" placeholder="Email address...">
+                                </div>
+                                <div class="uk-width-1-1 uk-width-expand@m">
+                                    <input class="uk-input uk-border-rounded" type="text" placeholder="Phone number...">
+                                </div>
+                                <div class="uk-width-1-1 uk-width-auto@m">
+                                    <button class="uk-button uk-button-primary uk-border-rounded uk-width-expand">Open Account</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-width-1-1 uk-margin-medium-top">
+                    <div class="trustpilot-widget" data-locale="en-GB" data-template-id="5406e65db0d04a09e042d5fc" data-businessunit-id="561d886b0000ff0005844fd6" data-style-height="28px" data-style-width="100%" data-theme="light">
+                        <a href="https://uk.trustpilot.com/review/pepperstone.com" target="_blank" rel="noopener noreferrer">Trustpilot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section content end -->
+    </main>
+    <!-- footer begin -->
+    <footer>
+        <div class="uk-section uk-section-secondary uk-padding-large uk-padding-remove-horizontal uk-margin-medium-top">
+            <div class="uk-container">
+                <div class="uk-child-width-1-2@s uk-child-width-1-5@m uk-flex uk-margin-small-top" data-uk-grid="">
+                    <div>
+                        <h4 class="uk-heading-bullet">Overview</h4>
+                        <ul class="uk-list uk-link-text">
+                            <li><a href="/markets">Stock indices</a></li>
+                            <li><a href="/markets">Commodities</a></li>
+                            <li><a href="/markets">Forex</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="uk-heading-bullet">Company</h4>
+                        <ul class="uk-list uk-link-text">
+                            <li><a href="/about">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="uk-heading-bullet">Legal</h4>
+                        <ul class="uk-list uk-link-text">
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                
+                    <div class="uk-flex-first uk-flex-last@m">
+                        <div class="footer-logo">
+                            <img class="uk-margin-bottom uk-display-block" src="/logo.png" alt="footer-logo" width="130" height="36" data-uk-img="">
+                        </div>
+                        <ul class="uk-list uk-link-text uk-margin-remove-top">
+                            <li><a href="#"><i class="fas fa-envelope uk-margin-small-right"></i>info@foxtradeapp.com</a></li>
+                            <li><a href="#"><i class="fas fa-map-marker-alt uk-margin-small-right"></i>Jakarta, Indonesia</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="uk-grid uk-flex uk-flex-center uk-margin-large-top uk-margin-small-bottom" data-uk-grid="">
+                    <div class="uk-width-5-6@m uk-margin-bottom">
+                        <div class="footer-warning in-margin-top-20@s">
+                            <h5 class="uk-text-small uk-text-uppercase"><span>Risk Warning</span></h5>
+                            <p class="uk-text-small">Trading derivatives and leveraged products carries a high level of risk, including the risk of losing substantially more than your initial investment. It is not suitable for everyone. Before you make any decision in relation to a financial product you should obtain and consider our Product Disclosure Statement (PDS) and Financial Services Guide (FSG) available on our website and seek independent advice if necessary </p>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-2@m">
+                        <p class="copyright-text">© FoxTradeApp 2024. All rights reserved.</p>
+                    </div>
+                    <div class="uk-width-1-2@m uk-flex uk-flex-right@m">
+                        <!-- social media begin -->
+                        <div class="uk-flex social-media-list">
+                        <div><a href="#" class="color-facebook text-decoration-none"><i class="fab fa-facebook-square"></i> Facebook</a></div>
+                        <div><a href="#" class="color-twitter text-decoration-none"><i class="fab fa-twitter"></i> Twitter</a></div>
+                        <div><a href="#" class="color-instagram text-decoration-none"><i class="fab fa-instagram"></i> Instagram</a></div>
+                        <div><a href="#some-link" class="color-youtube text-decoration-none"><i class="fab fa-youtube"></i> Youtube</a></div>
+                        </div>
+                        <!-- social media end -->
+                    </div>
+                </div>
+            </div>        
+        </div>
+    </footer>
+    <!-- footer end -->
+    <!-- to top begin -->
+    <a href="#" class="to-top uk-visible@m" data-uk-scroll>
+        Top<i class="fas fa-chevron-up" ></i>
+    </a>
+    <!-- to top end -->
+    <!-- javascript -->
+    <script src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" defer></script>
+    <script src="assets/js/utilities.min.js"></script>
+    <script src="assets/js/config-theme.js"></script>
+</body>
+
+</html>
